@@ -1,0 +1,1 @@
+SELECT emp_name,emp_age FROM employee_table;

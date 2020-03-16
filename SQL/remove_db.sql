@@ -1,0 +1,2 @@
+/* REMOVE A DATABASE */
+DROP DATABASE employee;

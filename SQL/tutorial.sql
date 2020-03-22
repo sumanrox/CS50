@@ -49,3 +49,25 @@ e.g:
 Get the list of employees from either departments, 'Analytics' OR 'Technologies'
 */
 SELECT * FROM employee_table WHERE emp_department='Analytics' OR emp_department='Technologies';
+
+/* NOT OPERATOR */
+/*
+NOT Operator displays the records if the condition is NOT TRUE
+e.g:
+Get the list of employees who are not in Operations
+*/
+SELECT * FROM employee_table WHERE NOT emp_department='Operations';
+
+/* LIKE OPERATOR */
+/*
+Like operator is used to extract records where a particular pattern is present
+Like operator is used in conjunction with wild card characters
+and there are 2 wild clard character availabe, '%' -> Represents zero, one or multiple characters
+and '_' -> Represents a single characters.
+
+e.g:
+Lets extract a record where we the pattern matches,
+get employee names where 
+*/
+SELECT * FROM employee_table WHERE emp_name LIKE 'S%';
+

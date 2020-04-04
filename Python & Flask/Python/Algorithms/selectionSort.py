@@ -35,6 +35,8 @@ def selectionSort(array,n,index=0): # we are providing a default value for index
     # Recursively calling selection sort function
     selectionSort(array,n,index+1)
 
+from datetime import datetime
+a=datetime.now()
 # Lets now create the driver code
 array=[25,6,1,0,99,1,23,12,3,6,445]
 n=len(array)
@@ -47,3 +49,5 @@ print("\n[*] Sorted Elements")
 for i in array:
     print(i,end=' ')
 print("\n")
+b=datetime.now()
+print("\n[*] Time took ",(b-a).total_seconds())

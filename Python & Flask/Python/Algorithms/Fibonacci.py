@@ -54,7 +54,7 @@ def fibonacci(n):
 for n in range (1,1001):
     print(n,":",fibonacci(n))
 """
-
+from datetime import datetime
 # Lets use python's builtin function to handle the cache
 from functools import lru_cache
 #lru cache stands for Least Recently Used Cache
@@ -73,5 +73,8 @@ def fibonacci(n):
     elif n>2:
         return fibonacci(n-1) + fibonacci(n-2)
 
-for n in range (1,50500):
+a=datetime.now()
+for n in range (1,100):
     print(n,":",fibonacci(n))
+b=datetime.now()
+print("\n[*] Time took ",(b-a).total_seconds())

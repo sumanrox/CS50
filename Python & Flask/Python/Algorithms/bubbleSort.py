@@ -10,10 +10,13 @@ def bubble_sort(listt):
         except IndexError: # if any problem with indexing, like idexOutOfBound, handle the error
             pass
     return listt 
-
+from datetime import datetime
+a=datetime.now()
 listt = [64, 34, 25, 12, 22, 11, 90] 
 bubble_sort(listt) 
   
 print("Sorted array:"); 
 for i in range(0, len(listt)): 
-    print(listt[i]), 
+    print(listt[i],end=",")
+b=datetime.now()
+print("\n[*] Time took ",(b-a).total_seconds())

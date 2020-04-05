@@ -6,7 +6,7 @@ def draw(height):
     draw(height-1)
     for i in range(height):
         i=i+1
-        print("#"),
+        print("#", end=" ")
     print("\n")
 
 draw(int(input("[*] Enter Height : ")))

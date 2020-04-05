@@ -61,10 +61,8 @@ from functools import lru_cache
 @lru_cache() # by default it stores 1020 bytes, it automatically adjusts memory
 def fibonacci(n):
     """ Check for valid input """
-    if type(n)!=int:
+    if type(n)!=int or n<1:
         raise TypeError("Input Must be a Positive int")    
-    if n<1:
-        raise TypeError("Input Must be a Positive int")
     #Compute the Nth Term
     if n==1:
         return 1
